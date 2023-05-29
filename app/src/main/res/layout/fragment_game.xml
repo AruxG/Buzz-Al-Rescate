@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.buzzalrescate.interfaz.GameFragment">
+
+
+    <com.example.buzzalrescate.engine.StandardGameView
+        android:id="@+id/gameView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <Button
+        android:id="@+id/pauseGame"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="top|right"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_vertical_margin"
+        android:background="@drawable/bot_npausa" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|left"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/peacesans"
+        android:shadowColor="#336ae9"
+        android:shadowRadius="5"
+        android:text="Puntos: 0"
+        android:textColor="#fdff35"
+        android:textSize="24sp"
+        />
+
+    <TextView
+        android:id="@+id/vidasZurg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center"
+        android:layout_marginStart="150dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="18dp"
+        android:fontFamily="@font/peacesans"
+        android:shadowColor="#336ae9"
+        android:shadowRadius="5"
+        android:text="50"
+        android:textColor="#fdff35"
+        android:textSize="27sp"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <include layout="@layout/view_joystick" />
+
+    <TextView
+        android:id="@+id/vidas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center"
+        android:fontFamily="@font/peacesans"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="15dp"
+        android:shadowColor="#E493AF"
+        android:shadowRadius="5"
+        android:text="3"
+        android:textColor="#B6484B"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:layout_gravity="top|center"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/contvidas" />
+
+    <ImageView
+        android:id="@+id/contZurg"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_gravity="top|center"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/convidaszurg"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+</FrameLayout>
